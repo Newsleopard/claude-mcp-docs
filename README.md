@@ -1,4 +1,4 @@
-> 🇹🇼 [繁體中文版](zh-tw)
+> 🇹🇼 [繁體中文版](https://github.com/Newsleopard/claude-mcp-docs/blob/main/zh-tw.md)
 
 # Newsleopard MCP Server Documentation
 
