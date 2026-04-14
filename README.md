@@ -1,14 +1,14 @@
 > 🇹🇼 [繁體中文版](zh-tw)
 
-# NewsLeopard MCP Server Documentation
+# Newsleopard MCP Server Documentation
 
 ## Server Description
 
-NewsLeopard (電子豹) is Taiwan's leading email marketing and SMS automation platform, serving 15,000+ businesses with 30-40% market share in Taiwan's email marketing industry. The platform processes billions of emails annually with 99%+ deliverability.
+Newsleopard (電子豹) is Taiwan's leading email marketing and SMS automation platform, serving 15,000+ businesses with 30-40% market share in Taiwan's email marketing industry. The platform processes billions of emails annually with 99%+ deliverability.
 
-The NewsLeopard MCP Server connects your NewsLeopard account to Claude, enabling you to manage email campaigns, view reports, analyze performance, and automate email marketing — all using natural language.
+The Newsleopard MCP Server connects your Newsleopard account to Claude, enabling you to manage email campaigns, view reports, analyze performance, and automate email marketing — all using natural language.
 
-**Server URL:** `https://mcp.newsleopard.com/mcp`
+**Server URL:** `https://mcp.Newsleopard.com/mcp`
 
 ---
 
@@ -67,7 +67,7 @@ Once connected, you can ask Claude in natural language. Here are three end-to-en
 
 **What Claude does:** Calls `get_verified_senders` to confirm which sender address to use, `get_top_lists` to locate your VIP list, runs `preflight_check_campaign` to validate readiness, then opens `draft_campaign` — an interactive form where you fill in subject, sender, and body.
 
-**You see:** An in-chat form; after you review and submit, a draft campaign is created in your NewsLeopard account ready for final review before sending.
+**You see:** An in-chat form; after you review and submit, a draft campaign is created in your Newsleopard account ready for final review before sending.
 
 ### 3. Find the optimal send time
 
@@ -91,11 +91,11 @@ Once connected, you can ask Claude in natural language. Here are three end-to-en
 4. Enter the URL:
 
    ```text
-   https://mcp.newsleopard.com/sse
+   https://mcp.Newsleopard.com/sse
    ```
 
-5. Click **Add** — you will be redirected to the NewsLeopard login page
-6. Enter your NewsLeopard credentials and click **Allow** to authorize
+5. Click **Add** — you will be redirected to the Newsleopard login page
+6. Enter your Newsleopard credentials and click **Allow** to authorize
 7. You will be returned to Claude.ai — the connector shows as **Connected**
 
 After connecting:
@@ -119,11 +119,11 @@ Same as Claude.ai — uses OAuth, no additional software required:
 3. Enter the URL:
 
    ```text
-   https://mcp.newsleopard.com/sse
+   https://mcp.Newsleopard.com/sse
    ```
 
 4. Click **Add** — your browser will open for OAuth login
-5. Enter your NewsLeopard credentials and authorize
+5. Enter your Newsleopard credentials and authorize
 6. Return to Claude Desktop
 
 Connectors added via the UI sync across Claude.ai and mobile devices.
@@ -142,9 +142,9 @@ Example config:
 ```json
 {
   "mcpServers": {
-    "newsleopard": {
+    "Newsleopard": {
       "command": "npx",
-      "args": ["-y", "mcp-remote", "https://mcp.newsleopard.com/sse"]
+      "args": ["-y", "mcp-remote", "https://mcp.Newsleopard.com/sse"]
     }
   }
 }
@@ -156,7 +156,7 @@ Restart Claude Desktop after editing the config.
 
 ## Legal & Support
 
-- **Privacy Policy:** <https://mcp.newsleopard.com/legal/privacy-policy>
-- **Terms of Use:** <https://mcp.newsleopard.com/legal/terms-of-use>
-- **Support:** <service@newsleopard.com>
-- **Website:** <https://www.newsleopard.com>
+- **Privacy Policy:** <https://mcp.Newsleopard.com/legal/privacy-policy>
+- **Terms of Use:** <https://mcp.Newsleopard.com/legal/terms-of-use>
+- **Support:** <service@Newsleopard.com>
+- **Website:** <https://www.Newsleopard.com>
