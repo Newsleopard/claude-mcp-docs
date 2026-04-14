@@ -91,7 +91,7 @@ Once connected, you can ask Claude in natural language. Here are three end-to-en
 4. Enter the URL:
 
    ```text
-   https://mcp.Newsleopard.com/sse
+   https://mcp.Newsleopard.com/mcp
    ```
 
 5. Click **Add** — you will be redirected to the Newsleopard login page
@@ -119,7 +119,7 @@ Same as Claude.ai — uses OAuth, no additional software required:
 3. Enter the URL:
 
    ```text
-   https://mcp.Newsleopard.com/sse
+   https://mcp.Newsleopard.com/mcp
    ```
 
 4. Click **Add** — your browser will open for OAuth login
@@ -144,7 +144,7 @@ Example config:
   "mcpServers": {
     "Newsleopard": {
       "command": "npx",
-      "args": ["-y", "mcp-remote", "https://mcp.Newsleopard.com/sse"]
+      "args": ["-y", "mcp-remote", "https://mcp.Newsleopard.com/mcp"]
     }
   }
 }
