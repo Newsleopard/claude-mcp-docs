@@ -49,6 +49,36 @@ The NewsLeopard MCP Server connects your NewsLeopard account to Claude, enabling
 
 ---
 
+## Usage Examples
+
+Once connected, you can ask Claude in natural language. Here are three end-to-end examples covering different capabilities:
+
+### 1. Analyze recent campaign performance
+
+**You ask:** "Show me my 10 most recent campaigns and tell me which performed best."
+
+**What Claude does:** Calls `get_recent_campaigns_summary` to list campaigns with open/click/bounce rates, then `compare_campaigns` to highlight the top performers.
+
+**You see:** A ranked list with key metrics, plus an interactive comparison widget that lets you drill into any campaign's per-link clicks and e-commerce revenue.
+
+### 2. Create a Black Friday promotional email
+
+**You ask:** "Help me draft a Black Friday newsletter for my VIP subscribers."
+
+**What Claude does:** Calls `get_verified_senders` to confirm which sender address to use, `get_top_lists` to locate your VIP list, runs `preflight_check_campaign` to validate readiness, then opens `draft_campaign` — an interactive form where you fill in subject, sender, and body.
+
+**You see:** An in-chat form; after you review and submit, a draft campaign is created in your NewsLeopard account ready for final review before sending.
+
+### 3. Find the optimal send time
+
+**You ask:** "What day and time should I send my newsletter for the best engagement?"
+
+**What Claude does:** Calls `get_best_send_time` which analyzes your subscribers' historical open behavior.
+
+**You see:** A heatmap showing the best send windows (day-of-week × hour-of-day) based on your actual audience — typically identifies a 2-3 hour peak window specific to your list.
+
+---
+
 ## Setup Instructions
 
 ### Claude.ai (Web)
@@ -105,4 +135,28 @@ For API Key authentication, use the `mcp-remote` bridge. Requires [Node.js](http
 Config file location:
 
 - **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
-- **Windows:** `%APPDATA%\Claude
+- **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
+
+Example config:
+
+```json
+{
+  "mcpServers": {
+    "newsleopard": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.newsleopard.com/sse"]
+    }
+  }
+}
+```
+
+Restart Claude Desktop after editing the config.
+
+---
+
+## Legal & Support
+
+- **Privacy Policy:** <https://mcp.newsleopard.com/legal/privacy-policy>
+- **Terms of Use:** <https://mcp.newsleopard.com/legal/terms-of-use>
+- **Support:** <service@newsleopard.com>
+- **Website:** <https://www.newsleopard.com>
